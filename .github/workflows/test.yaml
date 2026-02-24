@@ -21,5 +21,6 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       
-      - run: pytest
+      - name: Install the code linting and formatting tool Ruff
+        run: pipx install ruff
 
